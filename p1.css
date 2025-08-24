@@ -146,6 +146,7 @@ body {
         margin: 20px auto;
         transform: rotate(8deg);
         padding: 15px;
+        height: 550px;
     }
     
     #img1, #img2, #img3 {
@@ -182,6 +183,7 @@ body {
         margin: 15px auto;
         transform: rotate(5deg);
         padding: 12px;
+        height: 550px;
     }
     
     #img1, #img2, #img3 {
@@ -218,6 +220,7 @@ body {
         transform: rotate(3deg);
         padding: 10px;
         min-height: 200px;
+        height: 550px;
     }
     
     #img1, #img2, #img3 {
