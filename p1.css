@@ -94,13 +94,12 @@ body {
 }
 
 .manu1d {
-    height: auto;
+    height: 550px;
     min-height: 300px;
-    width: 90%;
+    width: 45%;
     background-color: aliceblue;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 30px auto;
     transform: rotate(10deg);
     border-radius: 15px;
