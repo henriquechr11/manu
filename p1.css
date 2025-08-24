@@ -64,18 +64,18 @@ body {
 }
 
 #img1 {
-    position: absolute;
-    top: 10%;
+    position: relative;
+    margin-top: -15%;
     left: 5%;
     transform: rotate(-45deg);
-    width: 60px;
-    height: auto;
+    width: auto;
+    height: 80px;
     z-index: 10;
 }
 
 #img2 {
     position: absolute;
-    top: 15%;
+    top: 7%;
     right: 5%;
     transform: rotate(45deg);
     height: 70px;
@@ -85,8 +85,8 @@ body {
 
 #img3 {
     position: absolute;
-    bottom: 20%;
-    left: 10%;
+    bottom: 96%;
+    left: 0%;
     transform: rotate(15deg);
     width: 60px;
     height: auto;
@@ -94,7 +94,7 @@ body {
 }
 
 .manu1d {
-    height: 550px;
+    height: 400px;
     min-height: 300px;
     width: 45%;
     background-color: aliceblue;
@@ -102,7 +102,31 @@ body {
     justify-content: center;
     margin: 30px auto;
     transform: rotate(10deg);
-    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+
+}
+.manu2d {
+    height: 400px;
+    min-height: 300px;
+    width: 45%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    transform: rotate(10deg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.manu3d {
+    height: 400px;
+    min-height: 300px;
+    width: 45%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    transform: rotate(10deg);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     padding: 20px;
 }
@@ -110,7 +134,7 @@ body {
 .manu1 {
     margin: 0;
     height: auto;
-    max-height: 400px;
+    max-height: 350px;
     width: 90%;
     object-fit: contain;
     border-radius: 10px;
@@ -121,35 +145,54 @@ body {
     #main {
         padding: 10px;
     }
-    
+
     .f1 {
         height: 50vh;
         margin-bottom: 15px;
     }
-    
+
     #apresentacao {
         width: 95%;
         padding: 15px;
         min-height: 150px;
     }
-    
+
     #apresentacao p:first-child {
         font-size: 35px;
     }
-    
+
     #apresentacao p:last-child {
         font-size: 25px;
     }
-    
+
     .manu1d {
-        width: 95%;
+        width: 80%;
         margin: 20px auto;
         transform: rotate(8deg);
         padding: 15px;
-        height: 550px;
+        height: 460px;
+        margin-bottom: 20%;
     }
-    
-    #img1, #img2, #img3 {
+    .manu2d {
+        width: 80%;
+        margin: 20px auto;
+        transform: rotate(-8deg);
+        padding: 15px;
+        height: 460px;
+        margin-bottom: 20%;
+    }
+    .manu3d {
+        width: 80%;
+        margin: 20px auto;
+        transform: rotate(8deg);
+        padding: 15px;
+        height: 460px;
+        margin-bottom: 20%;
+    }
+
+    #img1,
+    #img2,
+    #img3 {
         width: 50px;
     }
 }
@@ -158,26 +201,26 @@ body {
     #main {
         padding: 8px;
     }
-    
+
     .f1 {
         height: 45vh;
         margin-bottom: 10px;
     }
-    
+
     #apresentacao {
         width: 98%;
         padding: 12px;
         min-height: 130px;
     }
-    
+
     #apresentacao p:first-child {
         font-size: 30px;
     }
-    
+
     #apresentacao p:last-child {
         font-size: 22px;
     }
-    
+
     .manu1d {
         width: 98%;
         margin: 15px auto;
@@ -185,8 +228,10 @@ body {
         padding: 12px;
         height: 550px;
     }
-    
-    #img1, #img2, #img3 {
+
+    #img1,
+    #img2,
+    #img3 {
         width: 45px;
     }
 }
@@ -196,25 +241,25 @@ body {
     #main {
         padding: 8px;
     }
-    
+
     .f1 {
         height: 40vh;
         margin-bottom: 10px;
     }
-    
+
     #apresentacao {
         padding: 10px;
         min-height: 100px;
     }
-    
+
     #apresentacao p:first-child {
         font-size: 25px;
     }
-    
+
     #apresentacao p:last-child {
         font-size: 20px;
     }
-    
+
     .manu1d {
         margin: 10px auto;
         transform: rotate(3deg);
@@ -222,8 +267,10 @@ body {
         min-height: 200px;
         height: 550px;
     }
-    
-    #img1, #img2, #img3 {
+
+    #img1,
+    #img2,
+    #img3 {
         width: 40px;
     }
 }
