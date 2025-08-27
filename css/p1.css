@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#main {
+    width: 100%;
+    min-height: 200vh;
+    background-color: #022996;
+    padding: 15px;
+    position: relative;
+}
+
+.f1 {
+    width: 100%;
+    height: 60vh;
+    background-image: url(manu1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+#apresentacao {
+    height: auto;
+    min-height: 180px;
+    width: 90%;
+    background-color: antiquewhite;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+#apresentacao p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    color: #022996;
+    text-align: center;
+    margin: 0;
+    padding: 8px 0;
+}
+
+#apresentacao p:first-child {
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+#apresentacao p:last-child {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#img1 {
+    position: relative;
+    margin-top: -15%;
+    left: 5%;
+    transform: rotate(-45deg);
+    width: auto;
+    height: 80px;
+    z-index: 10;
+}
+
+#img2 {
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    transform: rotate(45deg);
+    height: 70px;
+    width: auto;
+    z-index: 10;
+}
+
+#img3 {
+    position: absolute;
+    bottom: 96%;
+    left: 0%;
+    transform: rotate(15deg);
+    width: 60px;
+    height: auto;
+    z-index: 10;
+}
+
+.manu1d {
+    height: 400px;
+    min-height: 300px;
+    width: 45%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    transform: rotate(10deg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+
+}
+.manu2d {
+    height: 400px;
+    min-height: 300px;
+    width: 45%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    transform: rotate(10deg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.manu3d {
+    height: 400px;
+    min-height: 300px;
+    width: 45%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    transform: rotate(10deg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.manu1 {
+    margin: 0;
+    height: auto;
+    max-height: 350px;
+    width: 90%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Estilos para o botão MOTIVOS */
+#motivos {
+    display: block;
+    margin: 40px auto;
+    padding: 18px 40px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(135deg #ffffff, #c0c0c0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+}
+
+#motivos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffffff, #c0c0c0);
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+#motivos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(121, 165, 255, 0.4);
+}
+
+#motivos:hover::before {
+    left: 0;
+}
+
+#motivos:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(121, 165, 255, 0.4);
+}
+
+#motivos:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(121, 165, 255, 0.4);
+}
+
+/* Media queries específicas para mobile */
+@media (max-width: 480px) {
+    #main {
+        padding: 10px;
+    }
+
+    .f1 {
+        height: 50vh;
+        margin-bottom: 15px;
+    }
+
+    #apresentacao {
+        width: 95%;
+        padding: 15px;
+        min-height: 250px;
+    }
+    #apresentacao1 {
+        width: 95%;
+        padding: 15px;
+        min-height: 150px;
+    }
+
+    #apresentacao p:first-child {
+        font-size: 35px;
+    }
+
+    #apresentacao p:last-child {
+        font-size: 25px;
+    }
+
+    .manu1d {
+        width: 80%;
+        margin: 20px auto;
+        transform: rotate(8deg);
+        padding: 15px;
+        height: 460px;
+        margin-bottom: 20%;
+    }
+    .manu2d {
+        width: 80%;
+        margin: 20px auto;
+        transform: rotate(-8deg);
+        padding: 15px;
+        height: 460px;
+        margin-bottom: 20%;
+    }
+    .manu3d {
+        width: 80%;
+        margin: 20px auto;
+        transform: rotate(8deg);
+        padding: 15px;
+        height: 460px;
+        margin-bottom: 20%;
+    }
+
+    #img1,
+    #img2,
+    #img3 {
+        width: 50px;
+    }
+
+    #motivos {
+        margin: 30px auto;
+        padding: 16px 35px;
+        font-size: 20px;
+        border-radius: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    #main {
+        padding: 8px;
+    }
+
+    .f1 {
+        height: 45vh;
+        margin-bottom: 10px;
+    }
+
+    #apresentacao {
+        width: 98%;
+        padding: 12px;
+        min-height: 130px;
+    }
+
+    #apresentacao p:first-child {
+        font-size: 30px;
+    }
+
+    #apresentacao p:last-child {
+        font-size: 22px;
+    }
+
+    .manu1d {
+        width: 98%;
+        margin: 15px auto;
+        transform: rotate(5deg);
+        padding: 12px;
+        height: 550px;
+    }
+
+    #img1,
+    #img2,
+    #img3 {
+        width: 45px;
+    }
+
+    #motivos {
+        margin: 25px auto;
+        padding: 14px 30px;
+        font-size: 18px;
+        border-radius: 35px;
+    }
+}
+
+/* Orientação landscape para mobile */
+@media (orientation: landscape) and (max-height: 500px) {
+    #main {
+        padding: 8px;
+    }
+
+    .f1 {
+        height: 40vh;
+        margin-bottom: 10px;
+    }
+
+    #apresentacao {
+        padding: 10px;
+        min-height: 100px;
+    }
+
+    #apresentacao p:first-child {
+        font-size: 25px;
+    }
+
+    #apresentacao p:last-child {
+        font-size: 20px;
+    }
+
+    .manu1d {
+        margin: 10px auto;
+        transform: rotate(3deg);
+        padding: 10px;
+        min-height: 200px;
+        height: 550px;
+    }
+
+    #img1,
+    #img2,
+    #img3 {
+        width: 40px;
+    }
+
+    #motivos {
+        margin: 20px auto;
+        padding: 12px 25px;
+        font-size: 16px;
+        border-radius: 30px;
+    }
+}
