@@ -22,5 +22,121 @@
 
 #m{
     display: grid;
-    grid-row: 1fr 1fr;
+
+    grid-row: 1fr 1fr 1fr 1fr;
+
+}
+
+
+#pq{
+    height: 100vh;
+    width: 100%;
+    border-radius: 0px;
+    position: relative;
+    top: 10%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    font-size: 60px;
+    display: grid;
+    grid-template-rows: 500px 1fr ;
+}
+
+/* Estilos para a div pq1 - elementos lado a lado */
+#pq1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    margin-left: -6%;
+}
+
+#pq1 img {
+    height: 5vh;
+    width: auto;
+    transition: transform 0.3s ease;
+    filter: invert(100%);
+}
+
+#pq1 img:hover {
+    transform: scale(1.1);
+}
+
+#pq1 p {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.pq2{
+
+display: grid;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+
+}
+
+
+
+
+
+/* Media queries para responsividade mobile */
+@media (max-width: 768px) {
+    #pq1 {
+        gap: 20px;
+        padding: 15px;
+        width: 95%;
+    }
+    
+    #pq1 p {
+        font-size: 40px;
+    }
+    
+    #pq1 img {
+        height: 4vh;
+    }
+}
+
+@media (max-width: 480px) {
+    #pq1 {
+        gap: 15px;
+        padding: 10px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #pq1 p {
+        font-size: 35px;
+        order: 2;
+    }
+    
+    #pq1 img {
+        height: 3.5vh;
+    }
+    
+    #pq1 img:first-child {
+        order: 1;
+    }
+    
+    #pq1 img:last-child {
+        order: 3;
+    }
+}
+
+@media (max-width: 360px) {
+    #pq1 p {
+        font-size: 30px;
+    }
+    
+    #pq1 img {
+        height: 3vh;
+    }
 }
